@@ -1,6 +1,11 @@
-# Orplex Code - Release Artifacts
+# Orplex Code — Release Artifacts
 
-This repository contains compiled release binaries only (installers, update metadata, and blockmaps).
+This repository holds compiled release binaries only: the platform installers,
+their blockmaps and the updater channel files (`latest.yml`, `latest-mac.yml`,
+`latest-linux.yml`). Nothing here is built from this repository — every release
+is uploaded by the `Release App` workflow of
+[`Migratedboy/orplex-frountend`](https://github.com/Migratedboy/orplex-frountend).
 
-Source code lives in a private repository. No source code is ever pushed here.
-
+No source code, unpacked build tree, environment file or secret is published
+here. The installers ship the app inside an asar archive, with source maps
+disabled.
